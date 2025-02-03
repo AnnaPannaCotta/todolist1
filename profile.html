@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ToDoProfile</title>
+    <link
+      rel="shortcut icon"
+      href="#"
+      type="image/x-icon"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css">
+  </head>
+    <body>
+      <aside class="sidebar">
+        <div class="setting">
+          <span class="user-name"
+            >Затягнути логін або електронну пошту користувача</span
+          >
+          <button class="sidebar__icon" id="theme-icon">
+            <img class="sidebar__svg" src="./img/theme.svg" alt="icon for theme of app" />
+          </button>
+          <button class="sidebar__icon" id="sidebar-icon">
+            <img class="sidebar__svg" src="./img/hide.svg" alt="icon for hide sidebar" />
+          </button>
+        </div>
+        <div class="task--button">
+          <button class="new-task" id="new-task">
+            <img class="plus" src="./img/add.svg" alt="add new task">
+            Додати справу
+          </button>
+        </div>
+        <ul class="list-groups">
+            <li id="today">Сьогодні</li>
+            <li id="soon">Невдовзі</li>
+            <li id="achive">Архів</li>
+        </ul>
+        <div class="list">
+          <button class="show-list" id="show-list">
+            Списки завдань
+          </button>
+          <button class="show-list" id="add-list">
+            Додати список
+          </button>
+        </div>
+        <div class="list-name">
+          <ul class="list-name" id="list-name">
+            <li class="list-name" id="list-one"></li>
+          </ul>
+        </div>
+      </aside>
+      <main class="main" id="main">
+        <nav class="add-function">
+          <ul class="display">
+            <li class="display-logs"><img class="logs" src="./img/logs.svg" alt="logs"></li>
+          </ul>
+        </nav>
+        <div class="main-content">
+          <p class="page-name" id="page-name">#</p>
+          <!-- //Вивести за допомогою js назву обраного списку -->
+          <button class="main-content--btn">
+            <img class="plus-main" src="./img/add.svg" alt="add new task">Додати справу
+          </button>
+        </div>
+        <div class="task-list">
+          <input
+            type="text"
+            class="task-title"
+            placeholder="Введіть назву задачі"
+            value="#"
+          />
+          <textarea class="task-description" placeholder="Опис"></textarea>
+          <div class="task-actions">
+            <input type="text" id="datePicker">
+            <button class="action-button" id="openCalendar">Коли?</button>
+            <div class="task-footer">
+              <button class="choose-list" id="choose-list"><span>#</span></button>
+              <div class="footer-buttons">
+                <button class="cancel-button" id="cancel-button">Відмінити</button>
+                <button class="add-button" id="add-button">Додати</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="full-list">
+          <ul class="full-list">
+            <li class="list-item"></li>
+          </ul>
+        </div>
+      </main>
+      <!-- <script type="module" src="main.js"></script> -->
+      <script type="module" src="main.js"></script>
+      <script type="module" src="calendar.js">
+      </script>
+    </body>
+</html>
