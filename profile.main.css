@@ -2,7 +2,7 @@
     margin-left: 400px; 
     padding: 40px;
     width: 100%;
-    background: #fdf0e4;
+    background: #fcf6e6;
 } 
 ul {
     list-style: none;
@@ -61,7 +61,4 @@ ul {
 }
 .task-title, .task-description {
     border-style: none;
-}
-.task-title {
-
 }
